@@ -42,7 +42,7 @@ def chunks(l, n):
 img_to_equalize = cv2.imread('images/dawkins-200px.png',0)
 equ = cv2.equalizeHist(img_to_equalize)
 # res = np.hstack((img_to_equalize,equ)) #stacking images side-by-side
-cv2.imwrite('dawkins-equalized.png',equ)
+cv2.imwrite('images/dawkins-equalized.png',equ)
 
 width,height = get_num_pixels('images/dawkins-equalized.png')
 # print "Width: ", width
